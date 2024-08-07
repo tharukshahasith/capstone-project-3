@@ -10,7 +10,7 @@ app.use(express.static("public"));
 let posts = [];
 
 app.get("/", (req, res) => {
-    res.render("index.ejs", {posts: posts});
+    res.render("views/index.ejs", {posts: posts});
 })
 
 app.post("/submit", (req, res) => {
